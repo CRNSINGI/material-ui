@@ -1,0 +1,84 @@
+:root {
+    --primary: #007FFF;
+    --secondary: #6F7E8C;
+    --hover: #F5F5F5;
+    --text: #212121;
+}
+
+body { 
+    font-family: 'Roboto',
+     sans - serif;
+     font-size: 14px;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box { 
+    background-color: white;
+    padding: 1.5rem;
+    padding-top: 0.75rem;
+    border-radius: 1rem;
+}
+
+.box h2 { 
+    margin: 0;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.centering { 
+    display: flex; 
+    justify-content:  center;
+    align-items: center;
+    height: center;
+    width: 100vw;
+    height: 100vh;
+    background: var(--primary);
+}
+
+.input_wrapper { 
+    position: relative;
+    padding: 1rem 0 0; 
+}
+
+.input_field { 
+    border: 0; 
+    border-bottom: 2px solid
+       var(--seconday);
+       outline: 0; 
+       font-size: 1rem;
+       color: var(--text);
+       padding: 0.25rem 0px;
+       padding-right: 2rem;
+       background: transparent;
+       transition: border-color 0.2s;
+
+}
+
+.input_field::placeholder {
+    color: transparent;
+}
+
+.input_field:placeholder-shown 
+ ~ .input_label {
+    font-size: 1rem;
+    cursor: text;
+    color: var(--secondary);
+    top: 1.25rem;
+ }
+
+ label, .input_field:focus
+ ~ .input_label {
+    position: absolute;
+    top: 0;
+    display: block;
+    font-size: 0.875rem;
+    left: -0.0625rem;
+    color: var(--secondary);
+    transition: 0.3s;
+ }
